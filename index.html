@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Declare meta-data<!-->
+  <meta charset="UTF-8">
+  <meta name="author" content="Abraham Wachsman">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kesser Torah Estates</title>
+  <link rel="stylesheet" href="css/kesertorah.css">
+
+</head>
+
+<body>
+  <!-- Declare the header  -->
+  <header>
+    <div class="logo">
+      <img src="images/KesserTorahEstatesLogo.png" alt="Kesser Torah Estates logo" >
+    </div>
+
+
+    <nav class="nav">
+     <ul>
+      <li><a href="index.html" class="current" target="_self">Home</a></li>
+      <li><a href="yeshivacampus.html" target="_self">Yeshiva Campus</a></li>
+      <li><a href="mapofproperties.html" target="_self">Map of Properties</a></li>
+      <li><a href="homemodels.html" target="_self">Home Models</a></li>
+      <li><a href="about.html" target="_self">About</a></li>
+      <li><a href="contactus.html" target="_self">Contact Us</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+  <div class="bg"></div>
+  <!-- <img class="bg" src="images/001.jpg"> -->
+
+  <div class="container">
+
+    <ul id="slides">
+      <li class="slide showing">A community infused with a genuine ruach of Limud HaTorah and Avodas Hashem?</li>
+      <li class="slide">Country-like surroundings, free from the distractions of the city?</li>
+      <li class="slide">A warm, vibrant, young neighborhood?</li>
+      <li class="slide">A gated community, replete with amenities for the mishpacha?</li>
+      <li class="slide">Close proximity to an excellent chinuch system for your children?</li>
+      <li class="slide">Customized homes on large lots with available financing?</li>
+      <li class="slide">“Out of town” flavor within commuting distance to “in town”?</li>
+    </ul>
+
+  </div>
+
+ 
+
+   <script type="text/javascript">
+
+    var slides = document.querySelectorAll("#slides .slide");
+    var currentSlide = 0;
+    var slideInterval = setInterval(nextSlide,5000);
+    var opacity = 0;
+    var intervalID = 0;
+
+    function nextSlide(){
+      slides[currentSlide].className = "slide";
+      currentSlide = (currentSlide+1)%slides.length;
+      slides[currentSlide].className = "slide showing";
+    }
+
+    var playing = true;
+    var pauseButton = document.getElementById("pause");
+
+    function pauseSlideshow(){
+     pauseButton.innerHTML = "Play";
+      playing = false;
+      clearInterval(slideInterval);
+    }
+
+    function playSlideshow(){
+      pauseButton.innerHTML = "Pause";
+      playing = true;
+      slideInterval = setInterval(nextSlide,5000);
+
+    }
+
+   </script>
+
+  <footer class="footer-distributed">
+
+      <div class="footer-left">
+          
+        <h5><span> Kesser Torah Estates</span><br>Affordable homes in a Torah environment</h5>
+
+        <p class="footer-company-name">© 2020 Abe Wachsman and Kesser Torah Estates</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span>874 May Street</span>
+            Naugatuck, CT 06770</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>203.490.4078</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:ktestatesct@gmail.com">ktestatesct@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span></span>
+          </p>
+        
+      </div>
+    </footer>
+</body>
+</html>
