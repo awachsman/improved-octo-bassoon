@@ -1,0 +1,494 @@
+header {
+    background-color: #bfbabf;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color:   #addfd9;
+}
+
+p{
+  font-family: Helvetica, Arial, "Times New Roman", serif;
+  font-size: 85%;
+  text-align: left;
+  line-height: 1.6; 
+}
+
+h1, h2, h3, figcaption {
+  font-family: Helvetica, Arial, "Times New Roman", serif;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("../images/001.jpg");
+
+  /* Full height */
+  height: 70%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo img {
+  float: left;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  padding-right: 20px;
+}
+
+#slides{
+  list-style-type: none;
+  font-size: 120%
+  position: absolute;
+  left: 0px;
+  top: 100px;
+}
+
+.slide{ /* All list items disappear because the opacity is set to 0 */
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  width: 100%;
+  height: 100%;
+  font-size: 120%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.showing{ /* The active slide is set to an opacity of 1, causing it to show */
+  animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+    font-family: Helvetica, Arial, "Times New Roman", serif;
+  opacity: 1;
+  font-size: 220%;
+  top: 125px;
+  z-index: 2;
+
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  top: -700px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+header{
+  
+  text-align: center;
+  background-color: #bfbabf;
+  height: 100px;
+}
+
+/* All navigation-related styles are clustered here */
+.nav ul {
+  font-family: Helvetica, "Times New Roman", serif;
+  font-size: 100%;
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin-top: 50px;
+
+}
+
+.nav a {
+  
+  border-right: 1px solid rgba(0, 0, 0, .3);
+  color: #fff;
+  
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 50px;
+  margin-right: 20px;
+
+}
+
+nav a {
+  transition: .5s background-color;
+}
+
+nav {
+  float: left;
+}
+
+a:link {
+  color: #0000ff;
+
+}
+
+ a:visited {
+    color: #9900CC;
+}
+
+ a:hover {
+    color:  #fb0903;
+    background-color: #ffffff;
+    opacity: 1.0;
+}
+
+a:active {
+  color: black;
+  background-color: #ffffff;
+    opacity: 1.0;
+}
+
+.current{
+    background-color: yellow;
+    opacity: 1.0;
+}
+
+
+
+.nav li: first-child a {
+  border-radius: 4px 0 0 4px;
+}
+
+.nav li: last-child a {
+  border-right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* End of navigation-related styles */
+
+/* Footer-related are clustered here */
+footer{
+  text-align: center;
+  bottom: 0;
+}
+
+/*@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:20px; }
+}*/
+
+.footer-distributed{
+  background-color: #bfbabf;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font-family: Helvetica, Arial, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 50px 10px 50px;
+   
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-company-name {
+  font-size: 20px;
+}
+
+.footer-distributed .footer-left{
+  width: 30%;
+}
+
+.footer-distributed h3{
+  color:  #ffffff;
+  margin: 0;
+}
+
+/* Yeshiva Campus page styling begins here*/
+
+
+.yeshivaLeadInText {
+  font-family: Helvetica, "Times New Roman", serif;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 75%;
+}
+
+.yeshivaImage {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  width: 70%;
+
+}
+
+.yeshivaText {
+  font-family: Helvetica, "Times New Roman", serif;
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.yeshivaVideo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  width: 30%;
+}
+
+.salesmapText {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 75%;
+}
+
+.yeshivaImage2 {
+ 
+  width: 600px;
+  height: 350px;
+  padding-right: 2%;
+  padding-left: 2%;
+  
+}
+
+.yeshivaText2 {
+  width: 50%;
+}*/
+
+/* Home Models styling begins here*/
+.homeModelsText {
+  display: inline-block;
+  margin-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Tble styling for home models begins here*/
+table {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+table, th, td {
+  /*background: rgb(0,5,36);
+  background: linear-gradient(90deg, rgba(0,5,36,0.18019082633053218) 0%, rgba(12,227,61,0.6899947478991597) 47%, rgba(0,212,255,1) 100%);*/
+  /*padding: 2%;*/
+  border: 1px solid black;
+  /*border-collapse: collapse;*/
+  border-spacing: 10px;
+  /*font-variant: small-caps;*/
+  /*font-size: 80%;*/
+  line-height: 50px;
+  border-bottom: 2px solid #339933;
+}
+
+th, td {
+  font-family: Helvetica, "Times New Roman", serif;
+  text-align: center;
+}
+
+th:first-child {
+  padding-left: 3px;
+  text-align: center;
+  border-radius: 15px 0 0 0;
+  -webkit-border-radius:  15px 0 0 0;
+}
+
+th:nth-child {
+  padding-right: 10px;
+  text-align: center;
+}
+
+th:last-child {
+  padding-right: 3px;
+  text-align: center;
+  border-radius: 0 0 0 15px;
+  -webkit-border-radius:  0 15px 0 0;
+}
+
+tr td: nth-child(3) {
+  text-align: center;
+}
+
+.thumbnail {
+    /*border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding-left: 30px; /* Some padding */
+    padding-top: 10px;
+    width: 200px; /* Set a small width */
+    display: inline-block;
+}
+
+/* Cpntact Us styling begins here*/
+.upperContactUsInstruction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+
+.contactContainer {
+  display: flex;
+  /*padding-left: 30%;*/
+  
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Helvetica, "Times New Roman", serif;
+  line-height: 1.5;
+}
+
+label, input {
+  /* In order to define widths */
+  display: inline-block;
+  height: 50px;
+}
+
+label, option {
+  /* In order to define widths */
+  display: inline-block;
+  font-size: 85%;
+}
+
+label {
+  width: 30%;
+  /* Positions the label text beside the input */
+  text-align: right;
+}
+
+label+input {
+  width: 30%;
+  /* Large margin-right to force the next element to the new-line
+           and margin-left to create a gutter between the label and input */
+  margin: 0 30% 0 4%;
+  font-size: 85%;
+}
+
+
+/* Only the submit button is matched by this selector,
+       but to be sure you could use an id or class for that button */
+
+input+input {
+  float: right;
+}
+
+textarea {
+  display: inline-block;
+  margin-left: 35%;
+  font-size: 85%;
+
+}
+
+select {
+  display: inline-block;
+  margin-left: 4.3%;
+  height: 50px;
+  font-size: 85%;
+
+}
+
+#formSubmitButton {
+  display: inline-block;
+  margin-left: 50%
+}
+
+.fullMapImage {
+  display: inline-block;
+  height: 960px;
+  /*width: 1280;*/
+  width: 800;
+  padding-left: 20px;
+}
+
+.lotChart {
+  display: inline-block;
+  top: 150px;
+  float: right;
+  height: 760px;
+  /*width: 540;*/
+  width: 200;
+  padding-right: 20px;
+}
+
+/* Experimental layout of Map Of Properties*/
+.mapParcelRow {
+  display: flex;
+}
+
+.mapParcelColumn {
+  flex: 40%;
+  padding: 5px;
+
+}
+
+.djiVideo {
+  padding-left: 50px;
+}
+
+.aboutLeadinText {
+  font-family: Helvetica, "Times New Roman", serif;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  width: 75%;
+}
+.aboutRow{
+  display: flex;
+  width: 75%;
+  margin: auto;
+}
+
+.aboutColumn {
+  flex: 33%;
+  padding-left: 50px;
+}
+
+.aboutImage {
+  height: 250px;
+  width: 180px;
+}
