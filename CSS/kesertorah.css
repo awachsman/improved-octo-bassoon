@@ -24,7 +24,7 @@ h1, h2, h3, figcaption {
 
 .bg {
   /* The image used */
-  background-image: url("../images/001.jpg");
+  background-image: url("001.jpg");
 
   /* Full height */
   height: 70%; 
