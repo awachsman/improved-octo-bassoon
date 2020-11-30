@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Declare meta-data<!-->
+  <meta charset="UTF-8">
+  <meta name="author" content="Abraham Wachsman">
+  <title>Kesser Torah Estates</title>
+  <link rel="stylesheet" href="css/kesertorah.css">
+
+</head>
+<body>
+
+	<header>
+    <div class="logo">
+        <img src="images/KesserTorahEstatesLogo.png" alt="Kesser Torah Estates logo" >
+
+    </div>
+
+    <!-- <h1>Kesser Torah Estates</h1> -->
+
+    <nav class="nav">
+     <ul>
+      <li><a href="index.html" target="_self">Home</a></li>
+      <li><a href="yeshivacampus.html" target="_self">Yeshiva Campus</a></li>
+      <li><a href="mapofproperties.html" target="_self">Map of Properties</a></li>
+      <li><a href="homemodels.html" target="_self">Home Models</a></li>
+      <li><a href="about.html" target="_self">About</a></li>
+      <li><a href="contactus.html" class="current" target="_self">Contact Us</a></li>
+    </ul>
+    
+    
+
+  </nav>
+
+</header>
+    <div class="upperContactUsInstruction">
+      <h2>We've provided seeral avenues for you to contact us:</h2>
+      <p>Even the best-designed websites can't address every issue.  If you have a question and need a quick and personalized answer, you may call us at 203.490.4078 or email us at <a href="mailto:ktestatesct@gmail.com">ktestatesct@gmail.com</a>.  If you prefer, you may fill out the form below.  If you do, please provide us with sufficient detail so that we can handle your question quickly and completely. Note that the form fields which are asterisked are required.</p>
+    </div>
+
+    <div class="contactContainer">
+  <!-- <form action="action_page.php"> -->
+  <form id="contact-form" action="mailto:sysmaven@gmail.com?subject=Question from Kesser Torah Website" enctype="text/plain" method="post">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <br>
+
+    <label for="lname">Last Name *</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+    <br>
+    <label for="email">Email *</label>
+    <input type="text" id="email" name="email" placeholder="Your email address.." required>
+    <br>
+
+    <label type="tel" for="phone">Phone</label>
+    <input type="text" id="phone" name="phone" placeholder="Your telephone number..">
+    <br>
+
+    <label type="source" for="source">How did you hear about us?</label>
+    <input type="text" id="source" name="source" placeholder="Advertisement, word of mouth, etc..">
+    <br>
+
+    <label for="issue">Category</label>
+    <select id="issue" name="issue">
+      <option value="home">Homes design, pricing, etc.</option>
+      <option value="yeshivaorkollel">Yeshiva or Kollel</option>
+      <option value="general">General question</option>
+    </select>
+    <br>
+    <!-- <label for="subject">Subject</label> -->
+    <textarea id="subject" name="subject" rows="5" cols="65" placeholder="Tell us what you're sriting about.." style="height:200px"></textarea>
+    <br>
+    <input id="formSubmitButton" type="submit" value="Send">
+
+  </form>
+</div>
+
+// <script type="text/javascript">
+//    const constraints = {
+//        lname: {
+//            presence: { allowEmpty: false }
+//        },
+//        email: {
+//            presence: { allowEmpty: false },
+//            email: true
+//        },
+//        subject: {
+//            presence: { allowEmpty: false }
+//        }
+//    };
+
+//    const form = document.getElementById('contact-form');
+
+//    form.addEventListener('formSubmitButton', function (event) {
+//      const formValues = {
+//          lname: form.elements.lname.value,
+//          email: form.elements.email.value,
+//          subject: form.elements.subject.value
+//      };
+
+//      const errors = validate(formValues, constraints);
+
+//      if (errors) {
+//        event.preventDefault();
+//        const errorMessage = Object
+//            .values(errors)
+//            .map(function (fieldValues) { return fieldValues.join(', ')})
+//            .join("\n");
+
+//        alert(errorMessage);
+//      }
+//    }, false);
+// </script>
+</body>
+</html>
